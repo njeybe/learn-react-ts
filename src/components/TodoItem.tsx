@@ -1,6 +1,7 @@
 import type { Todo } from "../types/todo";
 
 // ito naman ay nagvvalidate ng data based on Todo na model
+// interface ay blueprint sa TypeScript na nag seset ng Rules
 interface TodoItemProps {
   todo: Todo;
 }
