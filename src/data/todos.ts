@@ -1,3 +1,5 @@
+// Siya yung model dito mag bbase ang props
+
 import type { Todo } from "../types/todo";
 
 export const dummyData: Todo[] = [

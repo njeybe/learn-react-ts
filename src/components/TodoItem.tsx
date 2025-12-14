@@ -1,9 +1,13 @@
 import type { Todo } from "../types/todo";
 
+// ito naman ay nagvvalidate ng data based on Todo na model
 interface TodoItemProps {
   todo: Todo;
 }
 
+// ang TodoItem ay siyang design 
+// at ang ': TodoItemProps' ay siyang nagvvalidate na dapat kung ano ang nasa rules
+// o requirements ay yun lamang ang masusunod
 export default function TodoItem({ todo }: TodoItemProps) {
   return (
     <div>
@@ -16,3 +20,7 @@ export default function TodoItem({ todo }: TodoItemProps) {
     </div>
   );
 }
+
+//////////////// ANALOGY /////////////////
+// Kung ang TodoItem ay isang Form na fi-fill up-an, 
+// ang TodoItemProps naman ang mga required fields na bawal maging blank
